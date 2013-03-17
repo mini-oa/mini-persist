@@ -34,14 +34,14 @@
 			<artifactId>junit</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.mini</groupId>
-			<artifactId>mini-model</artifactId>
-			<version>1.0</version>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>mini-framework</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.mini</groupId>
-			<artifactId>mini-framework</artifactId>
-			<version>1.0</version>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>mini-model</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
 </project>

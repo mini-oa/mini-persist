@@ -16,6 +16,7 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public class UserDaoImpl extends GenericDAOImpl<User> implements UserDao {
+	private final String QUERY_USER = "queryUer";
 
 	@Override
 	public void insert(User user) throws Exception {
@@ -32,7 +33,11 @@ public class UserDaoImpl extends GenericDAOImpl<User> implements UserDao {
 	@Override
 	public List<User> search(User user) throws Exception {
 		// TODO Auto-generated method stub
-		return super.queryAll(null);
+		//return super.queryAll(null);
+		if (user == null) {
+			return super.queryAll(null);
+		}
+		return super.queryAll(QUERY_USER, user);
 	}
 
 	@Override

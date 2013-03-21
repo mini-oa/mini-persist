@@ -16,5 +16,6 @@ public interface UserDao extends GenericDao<User> {
 	void insert(User user) throws Exception;
 	void update(User user) throws Exception;
 	List<User> search(User user) throws Exception;
+	User get(long id) throws Exception;
 	void delete(long id) throws Exception;
 }

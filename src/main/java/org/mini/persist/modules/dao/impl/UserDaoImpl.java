@@ -46,4 +46,10 @@ public class UserDaoImpl extends GenericDAOImpl<User> implements UserDao {
 		super.delete(null, id);
 	}
 
+	@Override
+	public User get(long id) throws Exception {
+		// TODO Auto-generated method stub
+		return super.queryById(null, id);
+	}
+
 }
